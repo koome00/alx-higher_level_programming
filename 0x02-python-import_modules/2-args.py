@@ -14,5 +14,3 @@ if __name__ == "__main__":
         print(f"{a: d} arguments:")
         for a, arg in enumerate(b):
             print(f"{a + 1} : {arg}")
-
-
