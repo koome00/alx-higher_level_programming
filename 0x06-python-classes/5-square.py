@@ -12,6 +12,11 @@ class Square:
         size: size of square sides
 
     Functions:
+        __init__(self, size)
+        size(self)
+        size(self, value)
+        area(self)
+        print(self)
     """
 
     def __init__(self, size=0):
