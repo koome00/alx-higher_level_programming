@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Empty class square
-definition
+First module where an empty class
+is defined
 """
-class Square():
+class Square:
     """Empty class"""
     pass
