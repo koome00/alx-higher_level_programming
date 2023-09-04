@@ -104,8 +104,11 @@ class Rectangle():
         """ string magic method """
         pound = "#"
         result = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                result += pound
-            result += "\n"
+        if self.__width == 0 or self.__height == 0:
+            return result
+        else:
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    result += pound
+                result += "\n"
         return result
