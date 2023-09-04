@@ -10,9 +10,9 @@ class Rectangle():
     class Rectangle definition
 
     Args:
-        width: rectangle width
-        height: height of rectangle
-        value: value to set
+        width (int): rectangle width
+        height (int): height of rectangle
+        value (int): value to set
 
     Functions:
         __init__(self, width = 0, height = 0)
