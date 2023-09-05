@@ -55,9 +55,9 @@ class Rectangle():
             value: value to set width
         """
         if type(value) is not int:
-            return TypeError("width must be an integer")
+            raise TypeError("width must be an integer")
         elif value < 0:
-            return ValueError("width must be >= 0")
+            raise ValueError("width must be >= 0")
         else:
             self.__width = value
 
@@ -82,9 +82,9 @@ class Rectangle():
         """
 
         if type(value) is not int:
-            return TypeError("width must be an integer")
+            raise TypeError("width must be an integer")
         elif value < 0:
-            return ValueError("width must be >= 0")
+            raise ValueError("width must be >= 0")
         else:
             self.__height = value
 
