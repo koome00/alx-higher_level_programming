@@ -64,9 +64,9 @@ class Rectangle():
             value: value to set width
         """
         if type(value) is not int:
-            return TypeError("width must be an integer")
+            raise TypeError("width must be an integer")
         elif value < 0:
-            return ValueError("width must be >= 0")
+            raise ValueError("width must be >= 0")
         else:
             self.__width = value
 
@@ -91,9 +91,9 @@ class Rectangle():
         """
 
         if type(value) is not int:
-            return TypeError("width must be an integer")
+            raise TypeError("width must be an integer")
         elif value < 0:
-            return ValueError("width must be >= 0")
+            raise ValueError("width must be >= 0")
         else:
             self.__height = value
 
@@ -107,15 +107,13 @@ class Rectangle():
             return 0
         else:
             return (self.__width * 2) + (self.__height * 2)
-
+    
     def __str__(self):
-        """ string magic method """
-        result = ""
+        """ Prints rectangle with #'s """
         if self.__width == 0 or self.__height == 0:
-            return result
-        else:
-            pic = "\n".join([str(Rectangle.print_symbol) *
-                self.__width for rows in range(self.__height)])
+            return ""
+        pic = "\n".join([str(self.print_symbol) * self.__width
+                         for rows in range(self.__height)])
         return pic
 
     def __repr__(self):
