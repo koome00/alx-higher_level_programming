@@ -10,7 +10,7 @@ class MyList(list):
     """
     inherits from list
 
-    methods:
+    Functions:
     print_sorted(self)
     """
     def print_sorted(self):
