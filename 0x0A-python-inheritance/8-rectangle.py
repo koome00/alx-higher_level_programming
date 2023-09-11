@@ -31,6 +31,7 @@ class BaseGeometry():
         elif value <= 0:
             raise ValueError("{:s} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """
     defines class rectangle
@@ -54,4 +55,3 @@ class Rectangle(BaseGeometry):
         self.__width = width
         super().integer_validator("height", height)
         self.__height = height
-
