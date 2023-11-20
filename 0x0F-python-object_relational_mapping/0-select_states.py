@@ -5,7 +5,8 @@ parameters given to script: username, password, database
 """
 
 import MySQLdb
-from sys import argv
+from sys import argvlear
+
 
 if __name__ == "__main__":
 
